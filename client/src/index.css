@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 0, 0);
+}
+
+.infinite-scroll-component__outerdiv{
+  width:100vw;
+  overflow: hidden; 
+}
+.infinite-scroll-component {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden !important; 
+}
+.img{
+  width: 3rem !important;
+  margin: 0;
+}
+.img:hover,.sl:hover{
+  cursor: pointer;
+}
+.imh{
+  height: 100%;
+  border-radius:0.4rem 0rem 0rem 0.4rem; 
+  border-right: 1px solid white;
+}
+.navbar{
+  padding: 0.2rem 0rem 0.2rem 0rem !important;
+  background-color: black;
+  border-right: 1px solid white;
+}
+.navbar-toggler{
+  padding: 0;
+  border-radius: 50%;
+}
+.bt{
+  border: 0px;
+}
+.bt:focus,
+.bt:active{
+    outline: none;
+    box-shadow: none;
+}
+.mar{
+  margin-top: 4rem;
+}
+.card-header{
+  padding: 0;
+}
+.male{
+  background-color: rgb(197, 233, 236);
+  border-radius:0.4rem 0rem 0rem 0.4rem; 
+  width: 30rem;
+  height: 100%;
+  
+}
+.female{
+  width: 30rem;
+  border-radius:0.4rem 0rem 0rem 0.4rem; 
+  background-color: rgb(231, 204, 204);
+  height: 100%;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.top{
+  z-index: 2000 !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.card-text{
+  margin: 0.5rem;
+}
+
+
+.c1{
+  border:none;
+  border-radius:5px;
+  overflow:hidden;
+  background-color:rgb(207, 207, 207)
+}
+
+.c3{
+  height:20px;
+  background-color:#eee;
+  margin: 0.5rem;
+  border-radius:3px;
+}
+.c5{
+  height:35px;
+  background-color:#eee;
+  margin: 0.5rem;
+  border-radius:2px;
+}
+
+.c2{
+  height: 100%;
+  background-color:#eee;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .4;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .imh {
+      width:100%;
+      height: 10rem;
+      border-radius: 0.4rem 0.4rem 0rem 0rem;
+  }
+  .cl{
+    width: 18rem;
+  }
+  .male,.female{
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+    width:100% ;
+  }
+}
